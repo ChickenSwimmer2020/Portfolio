@@ -2,4 +2,4 @@
 
 ---
 
-Hello! if your here then your wanting to see some samples of my code! well you can see that through these sample files provided!
+Hello! If you're here then you want to see some samples of my code! well, you can see that through these sample files provided!
