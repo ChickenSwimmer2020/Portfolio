@@ -24,6 +24,7 @@ class ExampleState extends FlxState {
 
     Counter = new FlxText(0, 0, 0, "", true);
     Counter.setFormat(null, 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.NONE, FlxColor.TRANSPARENT);
+    add(Counter);
   }
 
   override public function update(elapsed:Float) {
