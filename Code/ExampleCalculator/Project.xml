@@ -5,15 +5,19 @@
 
     <set name="SWF_VERSION" value="11.8"/>
   
-    <window if="cpp" width="1280" height="720" fps="60" background="#000000" hardware="false" vsync="false"/>
-    <window if="html5" width="0" height="0" resizeable="false"/>
+    <window if="cpp" width="400" height="500" fps="60" background="#000000" hardware="false" vsync="false"/>
+    <window if="hl" width="400" height="500" fps="60" background="#000000" hardware="true" vsync="false"/> <!-- apparently, hashlink needs hardware rendering to function?? -->
+    <window if="html5" fps="60" vsync="false" width="0" height="0" resizable="false" hardware="false" fullscreen="false"/>
+    <window background="null" if="html5" />
 
     <set name="BUILD_DIR" value="export"/>
     
     <source path="source"/>
+    <assets path="assets"/>
 
+    <haxelib name="openfl"/>
 	  <haxelib name="flixel" />
-  	<haxelib name="flixel-ui" />
+	  <haxelib name="flixel-ui" />
   	<haxelib name="flixel-addons" />
 
     <haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
@@ -22,4 +26,6 @@
     <haxedef name="FLX_NO_TOUCH" if="desktop"/>
     <haxedef name="FLX_NO_DEBUG" unless="debug"/>
     <haxedef name="NAPE_RELEASE_BUILD" unless="debug"/>
+
+    <icon path="assets/CalculatorLogo.svg"/>
 </project>
