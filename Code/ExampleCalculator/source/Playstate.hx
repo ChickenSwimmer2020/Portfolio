@@ -1,5 +1,11 @@
 package;
 
+import backend.UI;
+
 class Playstate extends FlxState {
-  //dosomething
+    var UI:UI = new UI();
+    public function new() {
+      super();
+      openSubState(UI);
+    }
 }
