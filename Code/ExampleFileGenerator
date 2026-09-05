@@ -1,0 +1,23 @@
+package;
+
+import sys.FileSystem;
+import haxe.io.Bytes;
+import sys.io.File;
+
+class ExampleFileGenerator {
+    public static function generateFile(path:String, name:String, ext:String, data:OneOfTwo<String, Bytes>):Bool {
+        if(!(data is haxe.io.Bytes) || !(data is String)) {
+            trace('data is neither a string or Bytes, aborting');
+            return false;
+        }
+        if(!FileSystem.exists(path)) FileSystem.createDirectory(path);
+
+        final full:String = '$path/$name.$ext';
+        if(data is haxe.io.Bytes) File.saveBytes(full, data);
+        else File.saveContent(full, data);
+
+        return FileSystem.exists(full);
+    }
+}
+
+abstract OneOfTwo<T1, T2>(Dynamic) from T1 from T2 to T1 to T2 {}
