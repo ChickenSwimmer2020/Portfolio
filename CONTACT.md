@@ -6,4 +6,4 @@ If you're looking at this file, you're probably thinking about wanting to commis
 Currently, there are 2 ways of contacting me that I am comfortable accepting.
 
 * Email: ChickenSwimmer2020@gmail.com
-* Discord: @chickenswimmer2020 (ChickenSwimmer2020) is the display name
+* Discord: @ChickenSwimmer2020 (ChickenSwimmer2020) is the display name
